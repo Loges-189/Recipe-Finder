@@ -1,6 +1,3 @@
-/* --------------------
-   GLOBAL RESET & BASE
--------------------- */
 :root {
   --primary: orangered;
   --secondary: orange;
@@ -28,16 +25,10 @@ body {
   line-height: 1.5;
 }
 
-/* --------------------
-   HEADINGS
--------------------- */
 h1 {
   padding: 1rem clamp(1rem, 5vw, 2.5rem);
 }
 
-/* --------------------
-   SEARCH SECTION
--------------------- */
 .search-container {
   width: 100%;
   margin-top: 2rem;
@@ -77,9 +68,6 @@ h1 {
   background-color: var(--secondary);
 }
 
-/* --------------------
-   RANDOM BUTTON
--------------------- */
 .random button {
   padding: 0.6rem 1rem;
   background-color: var(--success);
@@ -94,9 +82,6 @@ h1 {
   background-color: rgb(40, 185, 40);
 }
 
-/* --------------------
-   ITEMS GRID
--------------------- */
 .items-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -140,9 +125,6 @@ h1 {
   flex-grow: 1;
 }
 
-/* --------------------
-   POPUP
--------------------- */
 .popup {
   position: fixed;
   inset: 0;
@@ -194,10 +176,6 @@ h1 {
   font-size: 1.5rem;
   cursor: pointer;
 }
-
-/* --------------------
-   MESSAGES
--------------------- */
 .message {
   width: min(90%, 800px);
   
@@ -218,9 +196,6 @@ h1 {
   background-color: rgb(156, 241, 183);
 }
 
-/* --------------------
-   LISTS & SCROLLBAR
--------------------- */
 li {
   list-style: none;
   margin: 0.3rem 0;

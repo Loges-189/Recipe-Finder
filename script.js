@@ -1,4 +1,3 @@
-// ===== DOM CACHE =====
 const popup = document.querySelector(".popup");
 const popupDetails = document.querySelector(".popup-details");
 const form = document.querySelector(".input-container");
@@ -7,14 +6,12 @@ const itemsContainer = document.querySelector(".items-container");
 const msg = document.querySelector(".message");
 const randomBtn = document.querySelector(".random button");
 
-// ===== API URLS =====
 const API = {
   search: q => `https://www.themealdb.com/api/json/v1/1/search.php?s=${q}`,
   byId: id => `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`,
   random: `https://www.themealdb.com/api/json/v1/1/random.php`
 };
 
-// ===== UTIL =====
 const fetchJSON = async url => {
   const res = await fetch(url);
   if (!res.ok) throw new Error("Network error");
@@ -25,8 +22,6 @@ const showMessage = (text = "", type = "") => {
   msg.textContent = text;
   msg.className = `message ${type}`;
 };
-
-// ===== EVENTS =====
 randomBtn.addEventListener("click", async () => {
   showMessage("Searching random recipe...", "loading");
   try {
@@ -57,7 +52,6 @@ form.addEventListener("submit", async e => {
   }
 });
 
-// ===== EVENT DELEGATION =====
 itemsContainer.addEventListener("click", async e => {
   const item = e.target.closest(".item");
   if (!item) return;
@@ -69,8 +63,6 @@ itemsContainer.addEventListener("click", async e => {
     showMessage("Failed to load recipe", "error");
   }
 });
-
-// ===== RENDER =====
 const renderRecipes = meals => {
   itemsContainer.innerHTML = meals
     .map(
