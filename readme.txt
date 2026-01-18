@@ -1,4 +1,4 @@
-Recipe Finder
+#Recipe Finder
 Project Overview
 
 Recipe Finder is a web application that allows users to search for recipes based on ingredients or dish names. The app fetches recipes from a public API and displays detailed information including ingredients, cooking instructions, and images.
