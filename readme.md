@@ -11,6 +11,7 @@
 - **Search recipes** by ingredient or name.
 - **View recipe details** including ingredients, steps, and images.
 - **Responsive and user-friendly interface.**
+- **Search the random recipe.**
 - **Lightweight and fast.**
 
 ---
@@ -25,7 +26,7 @@
 
 ## **How to Use**
 
-1. Open `index.html` in a web browser.
+1. Open `https://cook-planner.netlify.app/` in a web browser.
 2. Enter a dish name or ingredient in the search bar.
 3. Click **"Search"** to view a list of recipes.
 4. Click on a recipe to view full details.
